@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Weather</title>
+</head>
+
+<body>
+  <header>
+    <div class="top">
+      <h1>Weather Dashboard</h1>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 leftCol">
+        <div class="container">
+          <span id="searchText">Search for a City:</p></span>
+          <div class="d-table-cell">
+            <input class="form-control" type="text" id="searchBox"></input>
+          </div>
+          <div class="d-table-cell align-middle">
+            <button class="btn btn-primary" id="searchBtn"><i class="fa fa-search"></i></button></p>
+          </div>
+          <div class="card">
+            <ul class="list-group list-group-flush">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-9 rightCol">
+        <div class="row">
+          <div class="col-sm-12 currentWeather">
+            <div class="cityTop">
+              <span id="city">Search for City</span>
+              <span id="date"></span>
+              <span id="wIcon"><img id="icon"/></span>
+            </div>
+            <div id="temp">Temperature: </div></p>
+            <div id="humidity">Humidity: </div></p>
+            <div id="wind">Wind Speed: </div></p>
+            <div id="uvDiv">UV Index: <span id="uv"></span></div><p></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="forecast">
+              5-Day Forecast:
+            </div>
+            <div class="forecastBoxes">
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  
+<!-- <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> -->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
